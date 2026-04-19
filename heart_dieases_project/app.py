@@ -5,10 +5,10 @@ import joblib
 # Load saved model, scaler, and expected columns
 import os, joblib
 
-base_path = os.path.dirname(__file__)
-model = joblib.load(os.path.join(base_path, "KNN_heart_project.pkl"))
-scaler = joblib.load(os.path.join(base_path, "scaler_heart_project.pkl"))
-expected_columns = joblib.load(os.path.join(base_path, "columns_heart_project.pkl"))
+model = joblib.load("heart_dieases_project/KNN_heart_project.pkl")
+scaler = joblib.load("heart_dieases_project/scaler_heart_project.pkl")
+expected_columns = joblib.load("heart_dieases_project/columns_heart_project.pkl")
+
 
 
 st.title("Heart Stroke Prediction by Abhishek 💻")
